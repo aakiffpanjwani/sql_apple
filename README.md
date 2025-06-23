@@ -1,18 +1,19 @@
-# Apple Retail Sales SQL Project - Analyzing Millions of Rows of Sales Data
+# Apple Retail Sales SQL Project
+Analyzing Millions of Rows of Sales Data
+
 
 # ![Apple Logo](https://github.com/aakiffpanjwani/sql_apple/blob/main/store.jpg)
 
 ## Project Overview
+I designed this project to showcase my advanced SQL querying skills by analyzing more than one million rows of Apple retail sales data. The dataset captures products, stores, sales transactions, and warranty claims from Apple retail locations around the world. By tackling questions that range from straightforward counts to complex correlation analyses, I demonstrate how I extract actionable insights from large, relational datasets.
 
-This project is designed to showcase advanced SQL querying techniques through the analysis of over 1 million rows of Apple retail sales data. The dataset includes information about products, stores, sales transactions and warranty claims across various Apple retail locations globally. By tackling a variety of questions, from basic to complex, I have successfully demonstrated my ability to write sophisticated SQL queries that extract valuable insights from large datasets.
-
-## Entity Relationship Diagram (ERD)
+## Entity-Relationship Diagram (ERD)
+(See ERD illustration for table relationships.)
 
 ![ERD](https://github.com/aakiffpanjwani/sql_apple/blob/main/erd.png)
 
 ## Database Schema
-
-This project uses five main tables:
+I structured the database around five core tables:
 
 1. **stores**: Contains information about Apple retail stores.
    - `store_id`: Unique identifier for each store.
@@ -45,55 +46,74 @@ This project uses five main tables:
    - `repair_status`: Status of the warranty claim (e.g., Paid Repaired, Warranty Void).
 
 ## Objectives
+I organized my analysis into three tiers of questions that progressively increase in complexity.
 
-This project is split into three tiers of questions to test SQL skills of increasing complexity:
+Tier 1 – Easy to Medium
+1. Count the number of stores in each country.
 
-### Easy to Medium level questions:
+2. Calculate total units sold per store.
 
-1. Find the number of stores in each country.
-2. Calculate the total number of units sold by each store.
 3. Identify how many sales occurred in December 2023.
-4. Determine how many stores have never had a warranty claim filed.
-5. Calculate the percentage of warranty claims marked as "Warranty Void".
-6. Identify which store had the highest total units sold in the last year.
-7. Count the number of unique products sold in the last year.
-8. Find the average price of products in each category.
-9. How many warranty claims were filed in 2020?
-10. For each store, identify the best-selling day based on highest quantity sold.
 
-### Medium to Hard level questions:
+4. Find stores that have never had a warranty claim.
 
-11. Identify the least selling product in each country for each year based on total units sold.
-12. Calculate how many warranty claims were filed within 180 days of a product sale.
-13. Determine how many warranty claims were filed for products launched in the last two years.
-14. List the months in the last three years where sales exceeded 5,000 units in the USA.
-15. Identify the product category with the most warranty claims filed in the last two years.
+5. Determine the percentage of claims marked “Warranty Void.”
 
-### Complex questions:
+6. Reveal which store sold the most units in the last year.
 
-16. Determine the percentage chance of receiving warranty claims after each purchase for each country.
-17. Analyze the year-by-year growth ratio for each store.
-18. Calculate the correlation between product price and warranty claims for products sold in the last five years, segmented by price range.
-19. Identify the store with the highest percentage of "Paid Repaired" claims relative to total claims filed.
-20. Write a query to calculate the monthly running total of sales for each store over the past four years and compare trends during this period.
+7. Count unique products sold in the last year.
 
-### Bonus Question
+8. Compute the average product price per category.
 
-- Analyze product sales trends over time, segmented into key periods: from launch to 6 months, 6-12 months, 12-18 months, and beyond 18 months.
+9. Count warranty claims filed in 2020.
+
+10. For each store, identify the single best-selling day (highest quantity).
+
+Tier 2 – Medium to Hard
+1. For every country and year, identify the least-selling product (by units).
+
+2. Count claims filed within 180 days of purchase.
+
+3. Count claims on products launched in the last two years.
+
+4. List months (past three years) when U.S. sales exceeded 5 000 units.
+
+5. Identify the category with the most claims in the last two years.
+
+Tier 3 – Complex
+1. Compute the probability of a warranty claim after purchase, per country.
+
+2. Measure year-over-year growth for each store.
+
+3. Correlate product price with warranty-claim frequency (last five years, by price band).
+
+4. Find the store with the highest share of “Paid Repaired” claims.
+
+5. Produce a monthly running-total sales trend for every store over the past four years.
+
+## Bonus
+I also analyzed product-sales lifecycles—launch-to-6 months, 6-12 months, 12-18 months, and 18 months-plus—to highlight when each item peaks.
 
 ## Project Focus
+My main goal is to demonstrate:
 
-This project primarily focuses on developing and showcasing the following SQL skills:
+Complex joins & aggregations – combining multiple tables to surface insights.
 
-- **Complex Joins and Aggregations**: Demonstrating the ability to perform complex SQL joins and aggregate data meaningfully.
-- **Window Functions**: Using advanced window functions for running totals, growth analysis, and time-based queries.
-- **Data Segmentation**: Analyzing data across different time frames to gain insights into product performance.
-- **Correlation Analysis**: Applying SQL functions to determine relationships between variables, such as product price and warranty claims.
-- **Real-World Problem Solving**: Answering business-related questions that reflect real-world scenarios faced by data analysts.
+Window functions – running totals, growth rates, and time-series comparisons.
+
+Time-based segmentation – slicing data into meaningful launch-age buckets.
+
+Correlation analysis – evaluating relationships (e.g., price vs. claim likelihood).
+
+Real-world decision support – answering questions an Apple retail analyst might face.
 
 
-## Dataset
+## Dataset Details
+Size: 1,000,000 + sales rows (plus supporting tables).
 
-- **Size**: 1 million+ rows of sales data.
-- **Period Covered**: The data spans multiple years, allowing for long-term trend analysis.
-- **Geographical Coverage**: Sales data from Apple stores across various countries.
+Time Span: Multiple years, enabling long-term trend analysis.
+
+Geography: Apple retail stores across numerous countries.
+
+## Conclusion
+By designing, building, and querying this dataset myself, I prove my ability to handle enterprise-scale data, craft efficient SQL, and translate raw transactions into strategic business insights.
