@@ -70,29 +70,26 @@ Tier 1 – Easy to Medium
 10. For each store, identify the single best-selling day (highest quantity).
 
 Tier 2 – Medium to Hard
-1. For every country and year, identify the least-selling product (by units).
+11. For every country and year, identify the least-selling product (by units).
 
-2. Count claims filed within 180 days of purchase.
+12. Count claims filed within 180 days of purchase.
 
-3. Count claims on products launched in the last two years.
+13. Count claims on products launched in the last two years.
 
-4. List months (past three years) when U.S. sales exceeded 5 000 units.
+14. List months (past three years) when U.S. sales exceeded 5 000 units.
 
-5. Identify the category with the most claims in the last two years.
+15. Identify the category with the most claims in the last two years.
 
 Tier 3 – Complex
-1. Compute the probability of a warranty claim after purchase, per country.
+16. Compute the probability of a warranty claim after purchase, per country.
 
-2. Measure year-over-year growth for each store.
+17. Measure year-over-year growth for each store.
 
-3. Correlate product price with warranty-claim frequency (last five years, by price band).
+18. Correlate product price with warranty-claim frequency (last five years, by price band).
 
-4. Find the store with the highest share of “Paid Repaired” claims.
+19. Find the store with the highest share of “Paid Repaired” claims.
 
-5. Produce a monthly running-total sales trend for every store over the past four years.
-
-## Bonus
-I also analyzed product-sales lifecycles—launch-to-6 months, 6-12 months, 12-18 months, and 18 months-plus—to highlight when each item peaks.
+20. Produce a monthly running-total sales trend for every store over the past four years.
 
 ## Project Focus
 My main goal is to demonstrate:
