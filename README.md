@@ -81,6 +81,7 @@ Tier 2 – Medium to Hard
 15. Identify the category with the most claims in the last two years.
 
 Tier 3 – Complex
+
 16. Compute the probability of a warranty claim after purchase, per country.
 
 17. Measure year-over-year growth for each store.
